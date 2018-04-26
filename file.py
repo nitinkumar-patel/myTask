@@ -29,6 +29,9 @@ class MyClass:
                     unzip(os.path.abspath(os.path.join(dirpath, f)), dirpath)
                 # unzip()
                 # yield os.path.abspath(os.path.join(dirpath, f))
+     
+    def get_list(self, s):
+        return filter(lambda x: x !='', map(lambda x: x.strip(), s.split(',')))
 
 
 class StrTest:
